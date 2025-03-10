@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,31 @@
 	<title>3의 배수 찾기</title>
 	<style>
 		body {
-			font-size:1.2em;
-			text-align:center;
+			font-size: 1.2em;
+			text-align: center;
 		}
 	</style>
 </head>
+
 <body>
 	<h2>3의 배수 찾기</h2>
+	<script>
+		var sum = 0;
+
+		for (var i = 1; i <= 100; i++) {
+			if (i % 3 == 0) {
+				sum += 1;
+				document.write(i);
+				if (i >= 99) {
+					continue;
+				}
+
+				document.write(", ");
+			}
+		}
+		document.write("<br>");
+		document.write("3의 배수의 개수 : " + sum);
+	</script>
 </body>
+
 </html>

@@ -5,12 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>짝수일까, 홀수일까</title>
+	<style>
+		body {
+			font-size: 1.2em;
+			text-align: center;
+		}
+
+		h2 {
+			font-weight: bold;
+		}
+	</style>
 </head>
 <body>
 	<h2>짝수일까, 홀수일까</h2>
 
 	<script>
-	
+		var userNumber = prompt("숫자를 입력해줏요.");
+
+		if (userNumber % 2 === 0) {
+			document.write(userNumber + "는 짝수입니다.");
+		} else if (userNumber % 2 !== 0) {
+			document.write(userNumber + "는 홀수입니다.")
+		} else {
+			document.write("입력이 잘못되었습니다.");
+		}
 	</script>
 </body>
 </html>
